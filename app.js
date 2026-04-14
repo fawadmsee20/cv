@@ -3,7 +3,7 @@
 // Highlight the active nav link based on current page
 (function () {
   const page = window.location.pathname.split('/').pop() || 'index.html';
-  document.querySelectorAll('.nav-item').forEach(link => {
+  document.querySelectorAll('.nav-tab').forEach(link => {
     link.classList.remove('active');
     const href = link.getAttribute('href');
     if (href === page || (page === '' && href === 'index.html')) {
