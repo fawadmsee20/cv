@@ -8,11 +8,11 @@
 
 :root {
   --su-cardinal-red: #8C1515;
-  --bg-page:         #F3F3F5;
+  --bg-page:         #EBE9DF;
   --bg-white:        #ffffff;
   --text-main:       #2e2d29;
-  --text-muted:      #4d4f53;
-  --text-light:      #8a8a8a;
+  --text-muted:      #333333;
+  --text-light:      #7a7a7a;
   --accent-link:     #006cb8;
   --accent-link-hover:#005e9e;
   --border-light:    #e5e5e5;
@@ -55,9 +55,11 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
-  position: relative;
-  z-index: 20;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 .stanford-header-inner {
@@ -82,8 +84,9 @@ h1, h2, h3, h4, h5, h6 {
    HERO / PROFILE SECTION
    =================================================== */
 .hero-wrapper {
+  margin-top: 65px;
   background-color: var(--hero-bg);
-  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('bg-texture.png');
+  background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)), url('bg-texture.png');
   background-size: cover;
   background-position: center;
   color: white;
@@ -152,8 +155,7 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--bg-white);
   border-bottom: 1px solid var(--border-medium);
   box-shadow: 0 2px 4px rgba(0,0,0,0.02);
-  position: sticky;
-  top: 0;
+  position: relative;
   z-index: 5;
 }
 
@@ -291,9 +293,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p.content-text {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: var(--text-muted);
-  line-height: 1.7;
+  line-height: 1.6;
   margin-bottom: 20px;
 }
 
@@ -315,9 +317,9 @@ p.content-text {
 
 .pub-title {
   font-family: 'Crimson Text', 'Georgia', serif;
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   font-weight: 600;
-  color: var(--text-main);
+  color: var(--su-cardinal-red);
   line-height: 1.4;
   margin-bottom: 4px;
 }
