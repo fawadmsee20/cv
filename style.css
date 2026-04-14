@@ -321,7 +321,7 @@ p.content-text {
 
 .pub-title {
   font-family: 'Crimson Text', 'Georgia', serif;
-  font-size: 1.05rem;
+  font-size: 0.75rem; /* ~0.7x of original 1.05rem */
   font-weight: 600;
   color: var(--su-cardinal-red);
   line-height: 1.4;
@@ -329,13 +329,13 @@ p.content-text {
 }
 
 .pub-authors {
-  font-size: 0.95rem;
+  font-size: 0.65rem; /* ~0.7x of original 0.95rem */
   color: var(--text-muted);
   margin-bottom: 2px;
 }
 
 .pub-venue {
-  font-size: 0.9rem;
+  font-size: 0.65rem; /* ~0.7x of original 0.9rem */
   color: var(--text-muted);
   font-style: italic;
 }
