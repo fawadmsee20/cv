@@ -8,7 +8,7 @@
 
 :root {
   --su-cardinal-red: #8C1515;
-  --bg-page:         #f5f5f5;
+  --bg-page:         #F3F3F5;
   --bg-white:        #ffffff;
   --text-main:       #2e2d29;
   --text-muted:      #4d4f53;
@@ -18,7 +18,7 @@
   --border-light:    #e5e5e5;
   --border-medium:   #cccccc;
   
-  --site-width:      1000px;
+  --site-width:      1150px;
   --hero-bg:         #2b2b2b;
   --radius:          4px;
 }
@@ -50,11 +50,14 @@ h1, h2, h3, h4, h5, h6 {
    =================================================== */
 .stanford-header {
   background-color: var(--su-cardinal-red);
-  height: 50px;
+  height: 65px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+  position: relative;
+  z-index: 20;
 }
 
 .stanford-header-inner {
@@ -80,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
    =================================================== */
 .hero-wrapper {
   background-color: var(--hero-bg);
-  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('bg-texture.png');
   background-size: cover;
   background-position: center;
   color: white;
@@ -288,7 +291,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p.content-text {
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: var(--text-muted);
   line-height: 1.7;
   margin-bottom: 20px;
@@ -312,7 +315,7 @@ p.content-text {
 
 .pub-title {
   font-family: 'Crimson Text', 'Georgia', serif;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: 600;
   color: var(--text-main);
   line-height: 1.4;
@@ -402,7 +405,7 @@ p.content-text {
 }
 
 .timeline-desc {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: var(--text-muted);
   line-height: 1.6;
 }
