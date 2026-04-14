@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV – Fawad</title>
+  <meta name="description" content="Download or view the full Curriculum Vitae of Fawad, PostDoc Researcher at KENTECH, South Korea." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="profile-card">
+      <div class="avatar-ring"><div class="avatar-placeholder">F</div></div>
+      <h1 class="profile-name">FAWAD</h1>
+      <p class="profile-title">PostDoc Researcher</p>
+      <p class="profile-inst">EnergyAI Lab, KENTECH</p>
+      <p class="profile-loc">🇰🇷 Korea Institute of Energy Technology</p>
+    </div>
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html"        class="nav-item" id="nav-home">🏠 Home</a>
+      <a href="research.html"     class="nav-item" id="nav-research">🔬 Research</a>
+      <a href="publications.html" class="nav-item" id="nav-pubs">📄 Publications</a>
+      <a href="experience.html"   class="nav-item" id="nav-exp">💼 Experience</a>
+      <a href="education.html"    class="nav-item" id="nav-edu">🎓 Education</a>
+      <a href="cv.html"           class="nav-item" id="nav-cv">📋 CV</a>
+    </nav>
+    <div class="social-links">
+      <a href="mailto:fawadmsee20@gmail.com" class="social-btn" title="Email">✉️</a>
+      <a href="https://scholar.google.com/"  class="social-btn" title="Google Scholar" target="_blank">🎓</a>
+      <a href="https://www.researchgate.net" class="social-btn" title="ResearchGate"   target="_blank">🔗</a>
+      <a href="https://www.linkedin.com/"    class="social-btn" title="LinkedIn"       target="_blank">💼</a>
+    </div>
+  </aside>
+
+  <button class="hamburger" id="hamburger" aria-label="Open menu">☰</button>
+
+  <main class="main-content">
+
+    <section class="hero-section">
+      <div class="hero-badge">PDF · Last Updated Dec 2025</div>
+      <h2 class="hero-name">Curriculum Vitae</h2>
+      <p class="hero-subtitle">Download or view the full academic CV below.</p>
+    </section>
+
+    <section class="card-section cv-embed-section" id="section-cv-download">
+      <div class="cv-download-bar">
+        <a href="CV_Fawad.pdf" download class="btn-primary" id="btn-download-cv">⬇️ Download CV (PDF)</a>
+        <a href="CV_Fawad.pdf" target="_blank" class="btn-secondary" id="btn-open-cv">🔗 Open in New Tab</a>
+      </div>
+
+      <!-- PDF Viewer -->
+      <!-- Once you upload your PDF as CV_Fawad.pdf, it will appear here automatically -->
+      <div id="cv-viewer-wrapper">
+        <object
+          data="CV_Fawad.pdf"
+          type="application/pdf"
+          width="100%"
+          style="height: 80vh; border: 1px solid var(--border); border-radius: 12px;"
+          id="cv-pdf-object"
+          aria-label="Curriculum Vitae PDF viewer"
+        >
+          <div class="cv-fallback" id="cv-fallback">
+            <p>🗒️ Your browser cannot display PDFs inline.</p>
+            <p>Please <a href="CV_Fawad.pdf" download>download the CV</a> to view it.</p>
+          </div>
+        </object>
+      </div>
+
+      <p style="font-size:.78rem; color: var(--text-muted); margin-top: 1rem; text-align:center;">
+        ℹ️ Upload your CV PDF file named <code>CV_Fawad.pdf</code> to the same folder as this page to display it here.
+      </p>
+    </section>
+
+    <footer class="page-footer">
+      <p>Last updated: December 18, 2025 &nbsp;·&nbsp; © Fawad</p>
+    </footer>
+
+  </main>
+
+  <style>
+    .cv-fallback {
+      padding: 3rem;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 1rem;
+      background: var(--bg-dark);
+      border-radius: 12px;
+      border: 1px dashed var(--border);
+    }
+    .cv-fallback a { color: var(--text-link); }
+    code {
+      background: var(--bg-hover);
+      padding: 0.1rem 0.4rem;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      color: var(--accent-3);
+    }
+  </style>
+
+  <script src="app.js"></script>
+</body>
+</html>
