@@ -3,102 +3,83 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Research – Fawad</title>
-  <meta name="description" content="Research areas and interests of Fawad – Computer Vision, AI, WPT, UAV Navigation." />
+  <title>Research - Fawad Khan</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Source+Sans+Pro:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <aside class="sidebar" id="sidebar">
-    <div class="profile-card">
-      <div class="avatar-ring"><img src="FawadProfile.jpeg" alt="Fawad profile photo" /></div>
-      <h1 class="profile-name">FAWAD</h1>
-      <p class="profile-title">PostDoc Researcher</p>
-      <p class="profile-inst">EnergyAI Lab, KENTECH</p>
-      <p class="profile-loc">🇰🇷 Korea Institute of Energy Technology</p>
+  <!-- Top Branding Header -->
+  <header class="stanford-header">
+    <div class="stanford-header-inner">
+      <a href="index.html" class="university-brand">KENTECH Profiles</a>
     </div>
-    <nav class="nav-links" id="nav-links">
-      <a href="index.html"        class="nav-item" id="nav-home">🏠 Home</a>
-      <a href="research.html"     class="nav-item" id="nav-research">🔬 Research</a>
-      <a href="publications.html" class="nav-item" id="nav-pubs">📄 Publications</a>
-      <a href="experience.html"   class="nav-item" id="nav-exp">💼 Experience</a>
-      <a href="education.html"    class="nav-item" id="nav-edu">🎓 Education</a>
-      <a href="cv.html"           class="nav-item" id="nav-cv">📋 CV</a>
-    </nav>
-    <div class="social-links">
-      <a href="mailto:fawadmsee20@gmail.com" class="social-btn" title="Email">✉️</a>
-      <a href="https://scholar.google.com/"  class="social-btn" title="Google Scholar" target="_blank">🎓</a>
-      <a href="https://www.researchgate.net" class="social-btn" title="ResearchGate"   target="_blank">🔗</a>
-      <a href="https://www.linkedin.com/"    class="social-btn" title="LinkedIn"       target="_blank">💼</a>
-    </div>
-  </aside>
+  </header>
 
-  <button class="hamburger" id="hamburger" aria-label="Open menu">☰</button>
-
-  <main class="main-content">
-
-    <section class="hero-section">
-      <div class="hero-badge">4 Research Areas</div>
-      <h2 class="hero-name">Research Focus</h2>
-      <p class="hero-subtitle">Interdisciplinary research spanning AI, computer vision, wireless systems, and robotics.</p>
-    </section>
-
-    <section class="card-section" id="section-cv-ip">
-      <h3 class="section-title">👁️ Computer Vision &amp; Image Processing</h3>
-      <p style="font-size:.93rem; color: var(--text-muted); line-height:1.8;">
-        My work focuses on <strong style="color:var(--text-main)">person re-identification</strong> in multi-camera surveillance systems,
-        including both traditional feature engineering and modern deep learning approaches.
-        I also work on <strong style="color:var(--text-main)">2D/3D medical image reconstruction</strong> using
-        Variational Autoencoders (VAEs), diffusion models, and transformer-based architectures.
-        Additional topics include texture classification, image segmentation, and object detection.
-      </p>
-      <div class="interest-grid" style="margin-top:1.2rem;">
-        <div class="interest-card"><div class="interest-icon">🎯</div><h4>Person Re-ID</h4><p>Discriminative local features, overlapping stripe models, multi-camera tracking.</p></div>
-        <div class="interest-card"><div class="interest-icon">🏥</div><h4>Medical Imaging</h4><p>Dental panoramic reconstruction from CBCT data; 3D reconstruction with VAEs and diffusion.</p></div>
-        <div class="interest-card"><div class="interest-icon">🌊</div><h4>Texture Analysis</h4><p>Low-rank multi-channel features, hybrid descriptors, polynomial approximations.</p></div>
-        <div class="interest-card"><div class="interest-icon">🪸</div><h4>Underwater Vision</h4><p>ML framework for coral localisation using bag-of-hybrid visual feature classification.</p></div>
+  <!-- Hero / Profile Section -->
+  <section class="hero-wrapper">
+    <div class="hero-inner">
+      <div class="profile-photo-container">
+        <img src="FawadProfile.jpeg" alt="Fawad Khan">
       </div>
-    </section>
+      <div class="profile-info">
+        <h1 class="profile-name">Fawad Khan</h1>
+        <div class="profile-titles">
+          <strong>PostDoc Researcher</strong><br>
+          EnergyAI Lab, Korea Institute of Energy Technology
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section class="card-section" id="section-ai-dl">
-      <h3 class="section-title">🤖 Artificial Intelligence &amp; Deep Learning</h3>
-      <p style="font-size:.93rem; color: var(--text-muted); line-height:1.8;">
-        My current postdoctoral research at KENTECH focuses on developing
-        <strong style="color:var(--text-main)">AI-optimised Digital Twins</strong> for anomaly detection in DC power grids.
-        I use time-series forecasting techniques including XGBoost, GRU, Prophet, TimeGPT, and transformer models
-        for energy systems. I also work on <strong style="color:var(--text-main)">Visual SLAM</strong>,
-        sensor fusion, and embedded AI for edge devices.
+  <!-- Navigation Tabs -->
+  <nav class="tabs-container">
+    <div class="tabs-inner" id="nav-tabs">
+      <a href="index.html" class="nav-tab">Home</a>
+      <a href="research.html" class="nav-tab active">Research</a>
+      <a href="publications.html" class="nav-tab">Publications</a>
+      <a href="experience.html" class="nav-tab">Experience</a>
+      <a href="education.html" class="nav-tab">Education</a>
+      <a href="cv.html" class="nav-tab">CV</a>
+    </div>
+  </nav>
+
+  <!-- Main Layout -->
+  <main class="main-wrapper">
+    
+    <div class="content-area">
+      <h2 class="section-title">Research Overview</h2>
+      <p class="content-text">
+        Interdisciplinary research spanning AI, computer vision, wireless systems, and robotics.
       </p>
-    </section>
 
-    <section class="card-section" id="section-wpt">
-      <h3 class="section-title">⚡ Wireless Power Transfer (WPT)</h3>
-      <p style="font-size:.93rem; color: var(--text-muted); line-height:1.8;">
-        Designing AI-optimised <strong style="color:var(--text-main)">WPT systems for implantable medical devices</strong>,
-        including resonant structure design, ANSYS Maxwell electromagnetic simulations, Finite Element Analysis (FEA)
-        optimisation, and data-driven efficiency enhancement.
-        I also apply machine learning to jointly optimise coil and core designs for commercial WPT applications.
-      </p>
-    </section>
-
-    <section class="card-section" id="section-uav">
-      <h3 class="section-title">🚁 Indoor Localisation &amp; UAV Navigation</h3>
-      <p style="font-size:.93rem; color: var(--text-muted); line-height:1.8;">
-        Research on <strong style="color:var(--text-main)">GPS-denied navigation</strong> for UAVs and drones using
-        stereo vision, synchronised multi-camera setups, and robust computer-vision-based pose estimation.
-        Indoor localisation using RSSI fingerprinting and hybrid DNN models — culminating in the
-        <strong style="color:var(--text-main)">RS-DeepNet</strong> framework for precise indoor positioning.
-      </p>
-    </section>
-
-    <footer class="page-footer">
-      <p>Last updated: December 18, 2025 &nbsp;·&nbsp; © Fawad</p>
-    </footer>
+      <div class="interest-grid">
+        <div class="interest-card">
+          <h4>Computer Vision & Image Processing</h4>
+          <p>Person re-identification, multi-camera surveillance, 2D/3D medical image reconstruction using VAEs, diffusion models, and transformer-based methods.</p>
+        </div>
+        <div class="interest-card">
+          <h4>Artificial Intelligence & Deep Learning</h4>
+          <p>Visual SLAM, sensor fusion, embedded AI, anomaly detection in DC grids, ML-based forecasting and optimisation with XGBoost, GRU, Prophet, TimeGPT, and transformer models.</p>
+        </div>
+        <div class="interest-card">
+          <h4>Wireless Power Transfer (WPT)</h4>
+          <p>AI-optimised WPT systems for implantable medical devices, including resonant structure design, ANSYS Maxwell simulations, FEA optimisation, and data-driven efficiency enhancement.</p>
+        </div>
+        <div class="interest-card">
+          <h4>Indoor Localisation & UAV Navigation</h4>
+          <p>RSSI fingerprinting, hybrid DNN localisation, GPS-denied UAV/drone navigation using stereo vision, synchronised multi-camera setups, and robust computer-vision-based pose estimation.</p>
+        </div>
+      </div>
+    </div>
 
   </main>
+
+  <footer class="stanford-footer">
+    <p>© Fawad Khan | Last Updated: December 2025</p>
+  </footer>
 
   <script src="app.js"></script>
 </body>
